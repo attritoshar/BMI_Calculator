@@ -2,7 +2,7 @@
 
 ## Overview
 
-A simple, user-friendly web application that calculates Body Mass Index (BMI) using HTML, CSS, and JavaScript. This tool helps users quickly assess their body composition based on height and weight measurements.
+A simple, user-friendly web application that calculates Body Mass Index (BMI) using HTML, CSS, and JavaScript. This tool helps users quickly assess their body composition based on height and weight measurements.And give a quick estimate of whether your weight is appropriate for your height.
 
 ## Features
 
