@@ -58,7 +58,7 @@ A simple, user-friendly web application that calculates Body Mass Index (BMI) us
 - **Normal weight**: 18.5 - 24.9
 - **Overweight**: 25 - 29.9
 - **Obesity**: 30 or greater
-BMI doesn't account for muscle mass, bone density, overall body composition, or differences by sex and age.
+-BMI doesn't account for muscle mass, bone density, overall body composition, or differences by sex and age.
 
 ## Responsive Design
 
