@@ -11,6 +11,7 @@ A simple, user-friendly web application that calculates Body Mass Index (BMI) us
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
 - **BMI Category Interpretation**: Provides weight status categories
 - **Input Validation**: Ensures accurate and meaningful calculations
+- **Multilingual Support**:Available in multiple languages for wider accessibility.
 
 
 ## Live Demo
