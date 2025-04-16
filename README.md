@@ -2,7 +2,7 @@
 
 ## Overview
 
-A simple, user-friendly web application that calculates Body Mass Index (BMI) using HTML, CSS, and JavaScript. This tool helps users quickly assess their body composition based on height and weight measurements.
+A simple, user-friendly web application that calculates Body Mass Index (BMI) using HTML, CSS, and JavaScript. This tool helps users quickly assess their body composition based on height and weight measurements.And give a quick estimate of whether your weight is appropriate for your height.
 
 ## Features
 
@@ -11,6 +11,7 @@ A simple, user-friendly web application that calculates Body Mass Index (BMI) us
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
 - **BMI Category Interpretation**: Provides weight status categories
 - **Input Validation**: Ensures accurate and meaningful calculations
+- **Multilingual Support**:Available in multiple languages for wider accessibility.
 
 minor changes
 
@@ -58,6 +59,7 @@ minor changes
 - **Normal weight**: 18.5 - 24.9
 - **Overweight**: 25 - 29.9
 - **Obesity**: 30 or greater
+- BMI doesn't account for muscle mass, bone density, overall body composition, or differences by sex and age.
 
 ## Responsive Design
 
