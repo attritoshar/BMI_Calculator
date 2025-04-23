@@ -1,104 +1,131 @@
-# BMI Calculator
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        
+        <label for="weight">Enter Weight:</label>
+        <input type="number" id="weight" placeholder="Weight (kg or lbs)" required>
+        
+        <label for="height">Enter Height:</label>
+        <input type="number" id="height" placeholder="Height (cm or inches)" required>
+        
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        
+        <h3 id="result"></h3>
+        <p id="category"></p>
+    </div>
 
-## Overview
+    <script src="script.js"></script>
+</body>
+</html>
+/* Basic styling for the BMI Calculator */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
 
-A simple, user-friendly web application that calculates Body Mass Index (BMI) using HTML, CSS, and JavaScript. This tool helps users quickly assess their body composition based on height and weight measurements.And give a quick estimate of whether your weight is appropriate for your height.
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-## Features
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
 
-- **Simple Interface**: Clean and intuitive design for easy use
-- **Instant Calculation**: Immediate BMI result display
-- **Responsive Design**: Works seamlessly on desktop and mobile devices
-- **BMI Category Interpretation**: Provides weight status categories
-- **Input Validation**: Ensures accurate and meaningful calculations
-- **Multilingual Support**:Available in multiple languages for wider accessibility.
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
 
-someminor changes
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
 
-## Live Demo
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
-[View Live Demo](https://Visheshjha11.github.io/bmi-calculator)
+button:hover {
+    background-color: #45a049;
+}
 
-## Technologies Used
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
 
-- HTML5
-- CSS3
-- JavaScript
+#category {
+    text-align: center;
+    font-size: 1.2em;
+}
+function calculateBMI() {
+    // Get input values
+    let weight = parseFloat(document.getElementById("weight").value);
+    let height = parseFloat(document.getElementById("height").value);
+    let resultElement = document.getElementById("result");
+    let categoryElement = document.getElementById("category");
 
-## Getting Started
+    // Input validation
+    if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+        resultElement.textContent = "Please enter valid positive numbers for weight and height.";
+        categoryElement.textContent = "";
+        return;
+    }
 
-### Prerequisites
+    // Convert height to meters if it's in centimeters
+    if (height > 100) {
+        height = height / 100;  // Convert cm to meters
+    }
 
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- Text editor (VS Code, Sublime Text, etc.)
+    // Calculate BMI
+    let bmi = weight / (height * height);
 
-### Installation
+    // Display BMI result
+    resultElement.textContent = `Your BMI is: ${bmi.toFixed(2)}`;
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/your-username/bmi-calculator.git
-   ```
+    // Determine BMI category
+    let category = "";
+    if (bmi < 18.5) {
+        category = "Underweight";
+    } else if (bmi >= 18.5 && bmi <= 24.9) {
+        category = "Normal weight";
+    } else if (bmi >= 25 && bmi <= 29.9) {
+        category = "Overweight";
+    } else {
+        category = "Obesity";
+    }
 
-2. Navigate to the project directory
-   ```bash
-   cd bmi-calculator
-   ```
-
-3. Open `index.html` in your preferred web browser
-
-## Usage
-
-1. Enter your weight (in kg or lbs)
-2. Enter your height (in cm or inches)
-3. Click the "Calculate BMI" button
-4. View your BMI and corresponding weight category
-
-## BMI Categories
-
-- **Underweight**: Below 18.5
-- **Normal weight**: 18.5 - 24.9
-- **Overweight**: 25 - 29.9
-- **Obesity**: 30 or greater
-- BMI doesn't account for muscle mass, bone density, overall body composition, or differences by sex and age.
-
-## Responsive Design
-
-The application is fully responsive and provides an optimal viewing experience across a wide range of devices, from mobile phones to desktop computers.
-
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## Future Improvements
-
-- [ ] Add metric and imperial unit conversion
-- [ ] Implement more detailed health insights
-- [ ] Create a weight tracking feature
-- [ ] Add data visualization of BMI trends
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-## Contact
-
-Vishesh Jha - visheshjha456@gmail.com
-
-Project Link: https://github.com/Visheshjha11/BMI_Calculator
-
-## Acknowledgements
-
-- [MDN Web Docs](https://developer.mozilla.org/)
-- [W3Schools](https://www.w3schools.com/)
-- Inspiration from various health and fitness applications
-
----
-
-**Disclaimer**: This BMI calculator is for informational purposes only and is not a substitute for professional medical advice. Always consult with a healthcare professional for personalized health guidance.
-.
+    categoryElement.textContent = `Category: ${category}`;
+}
