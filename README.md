@@ -101,3 +101,4 @@ Project Link: https://github.com/Visheshjha11/BMI_Calculator
 ---
 
 **Disclaimer**: This BMI calculator is for informational purposes only and is not a substitute for professional medical advice. Always consult with a healthcare professional for personalized health guidance.
+.
