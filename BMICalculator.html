@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Character set for the page -->
+    <!-- Define the character encoding to handle text correctly -->
     <meta charset="UTF-8" />
     
-    <!-- Viewport settings for responsiveness -->
+    <!-- Set up the viewport settings to ensure the page is responsive on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- Link to the external stylesheet for styling the page -->
+    <!-- Link to the external CSS stylesheet for styling the webpage -->
     <link rel="stylesheet" href="style.css" />
     
-    <!-- Description of the page for SEO and search engines -->
+    <!-- A brief description of the webpage for SEO purposes -->
     <meta name="description" content="A Body mass index(BMI) Calculator" />
     
-    <!-- Title of the webpage -->
+    <!-- The title displayed in the browser's tab -->
     <title>BMI Calculator</title>
   </head>
 
   <body>
-    <!-- Centered Heading for the page -->
+    <!-- Centered heading for the webpage -->
     <center><h1>BMI Calculator</h1></center>
 
-    <!-- Main navigation bar and logo section -->
+    <!-- The header section containing the website's logo and navigation links -->
     <header class="header">
       <div class="logo">
-        <!-- Logo image for the BMI calculator website -->
+        <!-- Logo image for the BMI calculator site -->
         <img src="logobmi.png" alt="BMI Logo" />
       </div>
       
       <nav class="nav-bar">
-        <!-- Navigation links for different pages -->
+        <!-- Navigation menu linking to other sections of the website -->
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="calculator.html">Calculator</a></li>
@@ -39,10 +39,10 @@
       </nav>
     </header>
 
-    <!-- Container for the BMI form -->
+    <!-- Container for the BMI form where users can input data -->
     <div class="container">
       <form id="bmi-form">
-        <!-- Height input field with label and mandatory asterisk -->
+        <!-- Input field for height with a label and asterisk indicating it’s required -->
         <label for="height">
           Height (cm): <span class="mandatory">*</span>
         </label>
@@ -54,20 +54,20 @@
           required
         />
 
-        <!-- Gender selection dropdown with mandatory asterisk -->
+        <!-- Dropdown menu for gender selection with a mandatory field indicator -->
         <label for="gender">
           Gender: <span class="mandatory">*</span>
         </label>
         <select name="gender" id="gender" required>
-          <!-- Default option to prompt user to select gender -->
+          <!-- Default option prompting the user to select their gender -->
           <option value="" disabled selected>Select your Gender</option>
-          <!-- Gender options -->
+          <!-- Gender options available for the user -->
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           <option value="Other">Other</option>
         </select>
 
-        <!-- Age input field with label and mandatory asterisk -->
+        <!-- Input field for age with a label and mandatory asterisk -->
         <label for="age">
           Age: <span class="mandatory">*</span>
         </label>
@@ -82,4 +82,3 @@
     </div>
   </body>
 </html>
-
