@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Character set for the page -->
     <meta charset="UTF-8" />
+    
+    <!-- Viewport settings for responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Link to the external stylesheet for styling the page -->
     <link rel="stylesheet" href="style.css" />
+    
+    <!-- Description of the page for SEO and search engines -->
     <meta name="description" content="A Body mass index(BMI) Calculator" />
+    
+    <!-- Title of the webpage -->
     <title>BMI Calculator</title>
   </head>
 
   <body>
+    <!-- Centered Heading for the page -->
     <center><h1>BMI Calculator</h1></center>
 
-    <!-- Main Form for BMI Calculator -->
+    <!-- Main navigation bar and logo section -->
     <header class="header">
       <div class="logo">
+        <!-- Logo image for the BMI calculator website -->
         <img src="logobmi.png" alt="BMI Logo" />
       </div>
+      
       <nav class="nav-bar">
+        <!-- Navigation links for different pages -->
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="calculator.html">Calculator</a></li>
@@ -25,12 +38,14 @@
         </ul>
       </nav>
     </header>
+
+    <!-- Container for the BMI form -->
     <div class="container">
       <form id="bmi-form">
-        <!-- Height Field -->
-        <label for="height"
-          >Height (cm): <span class="mandatory">*</span></label
-        >
+        <!-- Height input field with label and mandatory asterisk -->
+        <label for="height">
+          Height (cm): <span class="mandatory">*</span>
+        </label>
         <input
           type="number"
           id="height"
@@ -39,17 +54,23 @@
           required
         />
 
-        <!-- Gender Field -->
-        <label for="gender">Gender: <span class="mandatory">*</span></label>
+        <!-- Gender selection dropdown with mandatory asterisk -->
+        <label for="gender">
+          Gender: <span class="mandatory">*</span>
+        </label>
         <select name="gender" id="gender" required>
+          <!-- Default option to prompt user to select gender -->
           <option value="" disabled selected>Select your Gender</option>
+          <!-- Gender options -->
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           <option value="Other">Other</option>
         </select>
 
-        <!-- Age Field -->
-        <label for="age">Age: <span class="mandatory">*</span></label>
+        <!-- Age input field with label and mandatory asterisk -->
+        <label for="age">
+          Age: <span class="mandatory">*</span>
+        </label>
         <input
           type="number"
           id="age"
@@ -57,5 +78,8 @@
           placeholder="Enter your age"
           required
         />
+      </form>
+    </div>
+  </body>
+</html>
 
-       
