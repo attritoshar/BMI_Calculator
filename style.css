@@ -1,156 +1,163 @@
 /* Global Styles */
 body {
-  font-family: sans-serif;
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: black;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
+  font-family: sans-serif; /* Set the font to sans-serif */
+  max-width: 800px; /* Restrict the maximum width of the body */
+  margin: auto; /* Centers the body horizontally */
+  padding: 20px; /* Add padding around the body */
+  border-radius: 10px; /* Round the corners of the body */
+  background-color: black; /* Set the background color to black */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Apply shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for any transform changes */
 }
 
-
+/* Header Styles */
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #d87834;
-  padding: 10px 20px;
-  color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically align items in the center */
+  justify-content: space-between; /* Distribute space evenly between items */
+  background-color: #d87834; /* Set the background color */
+  padding: 10px 20px; /* Add padding inside the header */
+  color: white; /* Set text color to white */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow under the header */
 }
 
 .logo img {
-  height: 50px;
+  height: 50px; /* Set a fixed height for the logo */
+}
 
+.header {
+  padding-bottom: 10px; /* Add padding to the bottom of the header */
+  height: 50px; /* Set the height of the header */
+  border-radius: 200px; /* Round the corners */
+  margin-bottom: 5%; /* Add margin below the header */
 }
-.header{
-  padding-bottom: 10px;
-  height: 50px;
-  border-radius: 200px;
-  padding-bottom: 10px;
-  margin-bottom: 5%;
-}
+
+/* Navigation Bar Styles */
 .nav-bar {
-  display: flex;
-  align-items: center;
+  display: flex; /* Use flexbox for navigation bar */
+  align-items: center; /* Vertically align items */
 }
 
 .nav-links {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Display links horizontally */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
 .nav-links li {
-  margin: 0 15px;
+  margin: 0 15px; /* Add spacing between navigation links */
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  transition: color 0.3s ease;
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Set text color to white */
+  font-size: 16px; /* Set font size */
+  transition: color 0.3s ease; /* Smooth transition for hover color */
 }
 
 .nav-links a:hover {
-  color: blue;
+  color: blue; /* Change link color on hover */
 }
 
+/* Heading Styles */
 h1 {
-  font-size: 1.9rem;
+  font-size: 1.9rem; /* Set font size for h1 */
 }
-h2 {
-  font-size: 1.8rem;
-  color: #153210;
+
+h2, h3 {
+  font-size: 1.8rem; /* Set font size for h2 and h3 */
+  color: #153210; /* Set a dark green color for h2 and h3 */
 }
-h3 {
-  font-size: 1.8rem;
-  color: #153210;
-}
+
+/* Container Styles */
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: rgb(221, 127, 60);
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 540px;
-  margin: auto;
-  padding-right: 2px;
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Arrange children in a column */
+  align-items: center; /* Center content horizontally */
+  margin-bottom: 20px; /* Add margin below the container */
+  padding: 20px; /* Add padding inside the container */
+  background-color: rgb(221, 127, 60); /* Set background color */
+  border-radius: 10px; /* Round the corners of the container */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  width: 100%; /* Set container width to 100% */
+  max-width: 540px; /* Limit the maximum width */
+  margin: auto; /* Center the container */
+  padding-right: 2px; /* Adjust right padding */
 }
 
 .container label {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
+  margin-bottom: 10px; /* Add margin below labels */
+  font-size: 1.2rem; /* Set font size for labels */
 }
 
 .container input,
 .container select {
-  padding: 10px;
-  border: 2px solid #eeeef3;
-  border-radius: 10px;
-  margin-bottom: 12px;
-  width: 100%;
-  max-width: 500px;
+  padding: 10px; /* Add padding to inputs and selects */
+  border: 2px solid #eeeef3; /* Set border color */
+  border-radius: 10px; /* Round the corners */
+  margin-bottom: 12px; /* Add margin below inputs */
+  width: 100%; /* Set width to 100% */
+  max-width: 500px; /* Limit the maximum width */
 }
 
 .calculate button {
-  padding: 10px 20px;
-  background-color: #509c44;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
+  padding: 10px 20px; /* Add padding inside the button */
+  background-color: #509c44; /* Set background color */
+  color: white; /* Set text color to white */
+  border: none; /* Remove border */
+  border-radius: 10px; /* Round the corners */
+  cursor: pointer; /* Change cursor to pointer when hovering */
+  font-size: 1rem; /* Set font size */
+  transition: background-color 0.3s; /* Smooth transition for background color */
 }
 
 .calculate button:hover {
-  background-color: #407a36;
+  background-color: #407a36; /* Change background color on hover */
 }
 
 .result {
-  font-size: 2rem;
-  color: #007bff;
-  text-align: center;
+  font-size: 2rem; /* Set font size for the result */
+  color: #007bff; /* Set color for the result text */
+  text-align: center; /* Center-align the result text */
 }
 
+/* Paragraph Styles */
 .paragraph ul {
-  text-align: left;
-}
-.paragraph {
-  background-color: #509c44;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 20px;
-  padding-top: 5px;
-}
-.paragraph p {
-  line-height: 1.6;
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-.calculation {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  font-size: large;
+  text-align: left; /* Align list items to the left */
 }
 
+.paragraph {
+  background-color: #509c44; /* Set background color */
+  color: white; /* Set text color to white */
+  padding: 20px; /* Add padding inside the paragraph */
+  border-radius: 10px; /* Round the corners */
+  margin-top: 20px; /* Add margin on top */
+  padding-top: 5px; /* Adjust padding at the top */
+}
+
+.paragraph p {
+  line-height: 1.6; /* Increase line-height for readability */
+  font-size: 1rem; /* Set font size */
+  margin-bottom: 10px; /* Add margin below paragraphs */
+}
+
+/* Calculation Section Styles */
+.calculation {
+  display: flex; /* Use flexbox for calculation section */
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: center; /* Center content */
+  align-items: center; /* Align items in the center */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  font-size: large; /* Set font size */
+}
+
+/* Responsive Image Styles */
 .responsive-img {
-  width: 100%;
-  height: auto;
-  max-width: 900px;
-  margin-top: 20px;
+  width: 100%; /* Set width to 100% */
+  height: auto; /* Adjust height automatically */
+  max-width: 900px; /* Limit the maximum width */
+  margin-top: 20px; /* Add margin on top */
 }
 
 /* Media Queries for Responsiveness */
@@ -158,85 +165,86 @@ h3 {
 /* Mobile Devices (Portrait) */
 @media (max-width: 500px) {
   h1 {
-    font-size: 1.5rem;
-    text-align: center; /* Center-aligns header text */
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    text-align: center; /* Center-align the text */
   }
 
   .container {
-    padding: 10px;
-    margin: 0 auto; /* Centers container on the page */
+    padding: 10px; /* Reduce padding */
+    margin: 0 auto; /* Center the container */
   }
 
   .container input,
   .container select {
-    width: 100%;
-    max-width: 100%;
-    padding: 10px; /* Adds padding for better touch usability */
-    box-sizing: border-box; /* Ensures padding doesn’t affect width */
+    width: 100%; /* Ensure inputs take up full width */
+    max-width: 100%; /* Remove max-width for smaller screens */
+    padding: 10px; /* Add padding for better usability */
+    box-sizing: border-box; /* Ensure padding doesn’t affect width */
   }
 
   .calculate button {
-    padding: 12px 25px;
-    width: 100%; /* Ensures button takes up full width */
+    padding: 12px 25px; /* Increase padding for better touch interface */
+    width: 100%; /* Make the button take full width */
   }
 
   .paragraph {
-    padding: 15px;
-    text-align: center; /* Aligns text for readability on small screens */
+    padding: 15px; /* Adjust padding for small screens */
+    text-align: center; /* Center-align text */
   }
 
   .paragraph p {
-    font-size: 0.9rem;
-    line-height: 1.5; /* Improves readability */
+    font-size: 0.9rem; /* Adjust font size */
+    line-height: 1.5; /* Adjust line height for better readability */
   }
 }
 
 /* Tablets and Small Desktops */
 @media (max-width: 900px) {
   h1 {
-    font-size: 1.7rem;
+    font-size: 1.7rem; /* Adjust font size for tablets */
   }
 
   .container {
-    padding: 20px;
+    padding: 20px; /* Add more padding */
   }
 
   .container input,
   .container select {
-    width: 100%;
-    max-width: 500px;
+    width: 100%; /* Ensure inputs take full width */
+    max-width: 500px; /* Limit the maximum width */
   }
 
   .calculate button {
-    padding: 10px 18px;
+    padding: 10px 18px; /* Adjust padding for button */
   }
 
   .paragraph {
-    padding: 20px;
+    padding: 20px; /* Adjust padding for paragraph */
   }
 }
+
 /* About Section Styling */
 .about-section {
-  background-color: #f9f9f9; /* Light background */
-  color: #333; /* Dark text */
-  padding: 60px 20px;
-  font-family: "Arial", sans-serif;
-  text-align: center;
+  background-color: #f9f9f9; /* Set light background color */
+  color: #333; /* Set dark text color */
+  padding: 60px 20px; /* Add padding around the section */
+  font-family: "Arial", sans-serif; /* Set font to Arial */
+  text-align: center; /* Center-align text */
 }
 
 .about-section .container {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 800px; /* Limit the width of the container */
+  margin: 0 auto; /* Center the container */
 }
 
 .about-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #007bff; /* Accent color */
+  font-size: 2.5rem; /* Set font size for h2 */
+  margin-bottom: 20px; /* Add margin below the heading */
+  color: #007bff; /* Set accent color for the heading */
 }
 
 .about-section p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 15px;
+  font-size: 1rem; /* Set font size for paragraph */
+  line-height: 1.6; /* Adjust line height for readability */
+  margin-bottom: 15px; /* Add margin below paragraphs */
 }
