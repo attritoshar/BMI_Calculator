@@ -13,7 +13,7 @@ A simple, user-friendly web application that calculates Body Mass Index (BMI) us
 - **Input Validation**: Ensures accurate and meaningful calculations
 - **Multilingual Support**:Available in multiple languages for wider accessibility.
 
-minor changes
+someminor changes
 
 ## Live Demo
 
