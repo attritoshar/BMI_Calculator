@@ -18,7 +18,7 @@ form.addEventListener("submit", function (e) {
   const age = parseInt(document.querySelector("#age").value); // Convert age to an integer
   const gender = document.querySelector("#gender").value; // Retrieve the selected gender
 
-  // Validate height input
+  // Validate height input here.
   if (isNaN(height) || height <= 0) {
     results.innerHTML = "Please provide a valid height.";
     return; // Exit the function early to prevent further processing
