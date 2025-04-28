@@ -13,8 +13,8 @@ form.addEventListener("submit", function (e) {
   message.innerHTML = '';
 
   // Retrieve input values from the form (height, weight, age, and gender)
-  const height = parseInt(document.querySelector("#height").value); // Convert height to an integer
-  const weight = parseInt(document.querySelector("#weight").value); // Convert weight to an integer
+  const height = parseInt(document.querySelector("#height").value); // Convert height to an int
+  const weight = parseInt(document.querySelector("#weight").value); // Convert weight to an int
   const age = parseInt(document.querySelector("#age").value); // Convert age to an integer
   const gender = document.querySelector("#gender").value; // Retrieve the selected gender
 
