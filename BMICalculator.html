@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Define the character encoding to handle text correctly -->
+    <!-- Define the character encoding to handle text correctly, ensuring UTF-8 support -->
     <meta charset="UTF-8" />
     
-    <!-- Set up the viewport settings to ensure the page is responsive on different devices -->
+    <!-- Set up the viewport settings for responsive design, ensuring the page adjusts for different screen sizes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Link to the external CSS stylesheet for styling the webpage -->
     <link rel="stylesheet" href="style.css" />
     
-    <!-- A brief description of the webpage for SEO purposes -->
-    <meta name="description" content="A Body mass index(BMI) Calculator" />
+    <!-- A brief description of the webpage for SEO and social sharing purposes -->
+    <meta name="description" content="A Body Mass Index (BMI) Calculator to help determine your health status" />
     
-    <!-- The title displayed in the browser's tab -->
-    <title>BMI CALCULATOR</title>
+    <!-- The title displayed in the browser tab, summarizing the page's content -->
+    <title>BMI Calculator</title>
   </head>
 
   <body>
-    <!-- Centered heading for the webpage -->
+    <!-- Centered heading for the webpage, setting the title of the page -->
     <center><h1>BMI CALCULATOR</h1></center>
 
-    <!-- The header section containing the website's logo and navigation links -->
+    <!-- Header section containing the website's logo and navigation links for easy access to different pages -->
     <header class="header">
       <div class="logo">
-        <!-- Logo image for the BMI calculator site -->
+        <!-- Logo image for the BMI calculator site, providing a visual identity for the page -->
         <img src="logobmi.png" alt="BMI Logo" />
       </div>
       
+      <!-- Navigation bar with links to other important sections of the website -->
       <nav class="nav-bar">
-        <!-- Navigation menu linking to other sections of the website -->
         <ul class="nav-links">
+          <!-- Links to various pages on the website -->
           <li><a href="index.html">Home</a></li>
           <li><a href="calculator.html">Calculator</a></li>
           <li><a href="contact.html">Contact Us</a></li>
@@ -39,10 +40,10 @@
       </nav>
     </header>
 
-    <!-- Container for the BMI form where users can input data -->
+    <!-- Main content container for the BMI form, which collects user input -->
     <div class="container">
       <form id="bmi-form">
-        <!-- Input field for height with a label and asterisk indicating it’s required -->
+        <!-- Input field for height with a label and an asterisk indicating it’s a required field -->
         <label for="height">
           Height (cm): <span class="mandatory">*</span>
         </label>
@@ -50,7 +51,7 @@
           type="number"
           id="height"
           name="Height"
-          placeholder="Enter your height"
+          placeholder="Enter your height in centimeters"
           required
         />
 
@@ -61,7 +62,7 @@
         <select name="gender" id="gender" required>
           <!-- Default option prompting the user to select their gender -->
           <option value="" disabled selected>Select your Gender</option>
-          <!-- Gender options available for the user -->
+          <!-- Gender options available for selection -->
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           <option value="Other">Other</option>
@@ -75,10 +76,19 @@
           type="number"
           id="age"
           name="age"
-          placeholder="Enter your age"
+          placeholder="Enter your age in years"
           required
-        />
+        /> 
+
+        <!-- Submit button to send the form data to the server -->
+        <button type="submit">Calculate BMI</button>
       </form>
     </div>
+
+    <!-- Footer section for additional information or links (if necessary) -->
+    <footer>
+      <!-- Placeholder for footer content -->
+      <p>&copy; 2025 BMI Calculator. All rights reserved.</p>
+    </footer>
   </body>
 </html>
